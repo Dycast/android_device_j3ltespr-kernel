@@ -9,7 +9,7 @@ make -j4 bootimage
 
 function j3ltespr_zip
 {
-rsync -r device/samsung/j3ltespr/META-INF out/target/product/j3ltespr/META-INF
+rsync -r device/samsung/j3ltespr/META-INF out/target/product/j3ltespr/
 cd out/target/product/j3ltespr/
 zip -r tmp META-INF boot.img system 
 rm -rf META-INF

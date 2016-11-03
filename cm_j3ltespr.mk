@@ -13,7 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(shell mkdir -p $(OUT))
+$(hide) $(shell mkdir -p $(OUT))
 $(hide) $(shell find device/samsung/j3ltespr/ramdisk | cpio -o -H newc | gzip > $(OUT)/ramdisk.img)
 # Common qcom
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
